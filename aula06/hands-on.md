@@ -18,4 +18,4 @@ Requisitos
 - Provavelmente você possa utilizar alguns métodos como `addEventListener`, `createElement`, `appendChild`, `querySelector` e `style` para resolver este exercício.
 - Para criar a lista de cores, você tem várias opções:
     - Pode utilizar um `select` com `option` ou um `input` do tipo `color`, deixando mais livre a escolha do usuário e user friendly.
-    - Apenas um <ul> com <li> de cores.
+    - Apenas um `<ul>` com `<li>` de cores.
