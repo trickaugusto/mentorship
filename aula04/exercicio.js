@@ -36,6 +36,59 @@
  * o usuário poderá inserir as notas via terminal.
  */
 
-let nota1 = 4;
+/* let nota1 = 4;
 let nota2 = 8;
 let nota3 = 6;
+ */
+const readline = require("node:readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question(`Nota 1: `, (nota) => {
+  const nota1 = parseInt(nota);
+
+  if (nota1 < 0 || nota1 > 10) {
+    console.log("Nota invalida");
+    rl.close();
+
+    return
+  }
+
+  rl.question(`Nota 2: `, (nota) => {
+    const nota2 = parseInt(nota);
+
+    if (nota2 < 0 || nota2 > 10) {
+      console.log("Nota invalida");
+      rl.close();
+
+      return
+    }
+
+    rl.question(`Nota 3: `, (nota) => {
+      const nota3 = parseInt(nota);
+
+      if (nota3 < 0 || nota3 > 10) {
+        console.log("Nota invalida");
+        rl.close();
+      }
+
+      let media = (nota1 + nota2 + nota3) / 3;
+      console.log("Média: " + media);
+
+      if (media >= 7) {
+        console.log("Aprovado");
+      } else if (media >= 5 && media < 7) {
+        console.log("Recuperação");
+      } else {
+        console.log("Reprovado");
+      }
+
+      rl.close();
+
+      return
+    });
+  });
+});
