@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+#exibicaoTexto {
+  font-size: 35px;
+  font-family: cursive;
+}
+#historico {
+  margin-right: 50px;
+  list-style-type: none;
+}
+#texto {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: blue;
+  font-size: 16px;
+}
